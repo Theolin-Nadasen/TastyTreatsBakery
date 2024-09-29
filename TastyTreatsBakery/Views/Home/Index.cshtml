@@ -13,6 +13,9 @@
 		<th>
 			Price
 		</th>
+		<th>
+			Actions
+		</th>
 	</tr>
 
 	@foreach(Treat treat in Model)
@@ -21,6 +24,9 @@
 			<td>@treat.Name</td>
 			<td>@treat.Description</td>
 			<td>@treat.Price</td>
+			<td>
+				<a asp-controller="Home" asp-action="Remove" asp-route-id="@treat.Id" class="btn btn-danger">Delete</a>
+			</td>
 		</tr>
 	}
 </table>

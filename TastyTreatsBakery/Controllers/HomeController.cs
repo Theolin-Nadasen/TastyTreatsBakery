@@ -24,6 +24,45 @@ namespace TastyTreatsBakery.Controllers
 			return View(treats);
 		}
 
+
+		public IActionResult Create()
+		{
+			return View();
+		}
+
+		[HttpPost]
+		public IActionResult Create(Treat treat)
+		{
+			if (ModelState.IsValid)
+			{
+				_Db.treats.Add(treat);
+				_Db.SaveChanges();
+				return RedirectToAction("Index");
+			}
+			return View();
+		}
+
+		public IActionResult Remove(int id)
+		{
+			Treat? obj = _Db.treats.Where(x => x.Id == id).FirstOrDefault();
+
+			if (obj == null)
+			{
+				return NotFound();
+			}
+
+			return View(obj);
+		}
+
+		[HttpPost]
+		public IActionResult Remove(Treat obj)
+		{
+			_Db.treats.Remove(obj);
+			_Db.SaveChanges();
+			return RedirectToAction("Index");
+		}
+
+
 		public IActionResult Privacy()
 		{
 			return View();
