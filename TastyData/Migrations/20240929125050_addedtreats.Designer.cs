@@ -4,15 +4,15 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using TastyTreatsBakery.Data;
+using TastData.Data;
 
 #nullable disable
 
-namespace TastyTreatsBakery.Migrations
+namespace TastData.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240929125443_fixedTreats")]
-    partial class fixedTreats
+    [Migration("20240929125050_addedtreats")]
+    partial class addedtreats
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

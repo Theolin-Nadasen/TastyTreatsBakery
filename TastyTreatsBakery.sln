@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TastyTreatsBakery", "TastyTreatsBakery\TastyTreatsBakery.csproj", "{90558E23-3A5E-454F-8D02-124CC9AA7B00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TastyTreatsBakery", "TastyTreatsBakery\TastyTreatsBakery.csproj", "{90558E23-3A5E-454F-8D02-124CC9AA7B00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TastyModels", "TastyModels\TastyModels.csproj", "{518A1682-4939-4098-8669-48FCBCC7D8DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TastyData", "TastyData\TastyData.csproj", "{51512059-91B8-40E6-92E6-AEE5AED2B99B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{90558E23-3A5E-454F-8D02-124CC9AA7B00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90558E23-3A5E-454F-8D02-124CC9AA7B00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90558E23-3A5E-454F-8D02-124CC9AA7B00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{518A1682-4939-4098-8669-48FCBCC7D8DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{518A1682-4939-4098-8669-48FCBCC7D8DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{518A1682-4939-4098-8669-48FCBCC7D8DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{518A1682-4939-4098-8669-48FCBCC7D8DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51512059-91B8-40E6-92E6-AEE5AED2B99B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51512059-91B8-40E6-92E6-AEE5AED2B99B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51512059-91B8-40E6-92E6-AEE5AED2B99B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51512059-91B8-40E6-92E6-AEE5AED2B99B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

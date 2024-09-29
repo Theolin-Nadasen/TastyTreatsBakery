@@ -1,4 +1,4 @@
-namespace TastyTreatsBakery.Models
+namespace TastyModels
 {
 	public class ErrorViewModel
 	{

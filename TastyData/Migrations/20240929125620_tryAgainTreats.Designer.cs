@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using TastyTreatsBakery.Data;
+using TastData.Data;
 
 #nullable disable
 
-namespace TastyTreatsBakery.Migrations
+namespace TastData.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20240929125620_tryAgainTreats")]

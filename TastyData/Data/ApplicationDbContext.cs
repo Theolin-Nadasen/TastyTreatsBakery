@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using TastyTreatsBakery.Models;
+using TastyModels;
 
-namespace TastyTreatsBakery.Data
+namespace TastData.Data
 {
 	public class ApplicationDbContext : DbContext
 	{

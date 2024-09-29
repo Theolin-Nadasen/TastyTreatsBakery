@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using TastyTreatsBakery.Data;
+using TastData.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

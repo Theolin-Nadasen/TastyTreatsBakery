@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace TastyTreatsBakery.Migrations
+namespace TastData.Migrations
 {
     /// <inheritdoc />
     public partial class tryAgainTreats : Migration

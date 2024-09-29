@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using TastyTreatsBakery.Data;
-using TastyTreatsBakery.Models;
+using TastData.Data;
+using TastyModels;
 
 namespace TastyTreatsBakery.Controllers
 {

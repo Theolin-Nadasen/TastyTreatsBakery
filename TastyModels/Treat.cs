@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace TastyTreatsBakery.Models
+namespace TastyModels
 {
 	public class Treat
 	{
