@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using TastData.Data;
 using TastyModels;
 
 namespace TastyTreatsBakery.Controllers
@@ -10,58 +9,15 @@ namespace TastyTreatsBakery.Controllers
 	{
 		private readonly ILogger<HomeController> _logger;
 
-		private readonly ApplicationDbContext _Db;
-
-		public HomeController(ILogger<HomeController> logger, ApplicationDbContext DB)
+		public HomeController(ILogger<HomeController> logger)
 		{
-			_Db = DB;
 			_logger = logger;
 		}
 
 		public IActionResult Index()
 		{
-			List<Treat> treats = _Db.treats.ToList();
-			return View(treats);
-		}
-
-
-		public IActionResult Create()
-		{
 			return View();
 		}
-
-		[HttpPost]
-		public IActionResult Create(Treat treat)
-		{
-			if (ModelState.IsValid)
-			{
-				_Db.treats.Add(treat);
-				_Db.SaveChanges();
-				return RedirectToAction("Index");
-			}
-			return View();
-		}
-
-		public IActionResult Remove(int id)
-		{
-			Treat? obj = _Db.treats.Where(x => x.Id == id).FirstOrDefault();
-
-			if (obj == null)
-			{
-				return NotFound();
-			}
-
-			return View(obj);
-		}
-
-		[HttpPost]
-		public IActionResult Remove(Treat obj)
-		{
-			_Db.treats.Remove(obj);
-			_Db.SaveChanges();
-			return RedirectToAction("Index");
-		}
-
 
 		public IActionResult Privacy()
 		{
